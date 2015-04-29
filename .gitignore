@@ -1,0 +1,35 @@
+*~
+
+# Local Configuration might differ for your custom settings
+src/*/resources/application-local.yml
+local.gradle
+
+# IntelliJ IDEA project files
+.idea/
+*.iws
+*.ipr
+*.iml
+
+# Eclipse project files
+.settings
+.classpath
+.project
+
+# Java compile artefacts
+*.class
+build/
+out/
+target/
+.gradle/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.rpm
+
+# generic logs
+*.log
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
