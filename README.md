@@ -22,8 +22,7 @@ to retrieve the POM and jar file via github:
     
     <repository>
         <id>nikos-spring-boot-starter-marklogic</id>
-        <name>spring-boot-starter-marklogic Releases (nikos)</name>
-        <url>http://nikos.github.io/spring-boot-starter-marklogic/releases</url>
+        <url>https://raw.github.com/nikos/spring-boot-starter-marklogic/mvn-repo/</url>
     </repository>    
     
     
@@ -36,5 +35,5 @@ Inside your `dependencies` please add
 Pluse add the link to the location where to resolve this dependency as
 part of `repositories` section:
 
-    maven { url "http://nikos.github.io/spring-boot-starter-marklogic/releases" }
+    maven { url "https://raw.github.com/nikos/spring-boot-starter-marklogic/mvn-repo/" }
     
