@@ -12,7 +12,7 @@
 
     <groupId>de.nava</groupId>
     <artifactId>spring-boot-starter-marklogic</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1-SNAPSHOT</version>
     <name>spring-boot-starter-marklogic</name>
     <description>Boot starter for web applications leveraging MarkLogic server</description>
     <packaging>jar</packaging>
