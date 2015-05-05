@@ -1,4 +1,4 @@
-# spring-boot-starter-marklogic
+# spring-boot-starter-marklogic [![Build Status](https://travis-ci.org/nikos/spring-boot-starter-marklogic.svg?branch=master)](http://travis-ci.org/nikos/spring-boot-starter-marklogic)
 
 This project acts as [Spring Boot starter](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-maven-parent-pom) 
 for web applications which want to leverage the MarkLogic database server 
