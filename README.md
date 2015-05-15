@@ -37,3 +37,8 @@ part of `repositories` section:
 
     maven { url "https://raw.github.com/nikos/spring-boot-starter-marklogic/mvn-repo/" }
     
+
+## Sample project using this Spring Boot Starter
+
+If you are interested in a real-world project making use of the MarkLogic Spring Boot starter please visit the [wm14](https://github.com/jojrg/wm14) github project. 
+    
