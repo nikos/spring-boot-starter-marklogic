@@ -14,7 +14,7 @@ section the following dependency:
     <dependency>
         <groupId>de.nava</groupId>
         <artifactId>spring-boot-starter-marklogic</artifactId>
-        <version>0.1.0</version>
+        <version>0.1.1</version>
     </dependency>
 
 Add the following section to your `repositories` element to allow Maven
@@ -30,7 +30,7 @@ to retrieve the POM and jar file via github:
 
 Inside your `dependencies` please add
 
-    compile("de.nava:spring-boot-starter-marklogic:0.1.0")
+    compile("de.nava:spring-boot-starter-marklogic:0.1.1")
     
 Pluse add the link to the location where to resolve this dependency as
 part of `repositories` section:
