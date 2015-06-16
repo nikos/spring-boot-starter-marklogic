@@ -12,7 +12,7 @@
 
     <groupId>de.nava</groupId>
     <artifactId>spring-boot-starter-marklogic</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.2-SNAPSHOT</version>
     <name>spring-boot-starter-marklogic</name>
     <description>Boot starter for web applications leveraging MarkLogic server</description>
     <packaging>jar</packaging>
@@ -36,19 +36,17 @@
         <connection>scm:git:git://github.com/nikos/spring-boot-starter-marklogic.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/nikos/spring-boot-starter-marklogic.git</developerConnection>
         <url>https://github.com/nikos/spring-boot-starter-marklogic</url>
-        <tag>0.1.0</tag>
+        <tag>0.1.1</tag>
     </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring.boot.version>1.2.3.RELEASE</spring.boot.version>
+        <!-- Most important thirdparty library versions -->
+        <spring.boot.version>1.2.4.RELEASE</spring.boot.version>
         <spring.version>4.1.6.RELEASE</spring.version>
-        <marklogic.java-client.version>3.0.2</marklogic.java-client.version>
-        <camel.version>2.15.1</camel.version>
-        <keystore.password>dev_password</keystore.password>
-        <gpg.passphrase>dev</gpg.passphrase>
-        <passphrase>${gpg.passphrase}</passphrase>
+        <camel.version>2.15.2</camel.version>
+        <marklogic.java-client.version>3.0.3</marklogic.java-client.version>
         <!-- github server corresponds to entry in ~/.m2/settings.xml -->
         <github.global.server>github.com</github.global.server>
     </properties>
@@ -207,35 +205,5 @@
             <url>file://${project.build.directory}/mvn-repo</url>
         </repository>
     </distributionManagement>
-
-    <!--profiles>
-        <profile>
-            <id>sign-artifacts</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.4</version>
-                        <configuration>
-                            <passphrase>${passphrase}</passphrase>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles-->
 
 </project>
