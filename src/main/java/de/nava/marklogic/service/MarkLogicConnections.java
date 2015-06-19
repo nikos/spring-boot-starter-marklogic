@@ -4,6 +4,7 @@ import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
 import com.marklogic.client.admin.QueryOptionsManager;
 import com.marklogic.client.admin.ServerConfigurationManager;
+import com.marklogic.client.document.BinaryDocumentManager;
 import com.marklogic.client.document.JSONDocumentManager;
 import com.marklogic.client.document.TextDocumentManager;
 import com.marklogic.client.document.XMLDocumentManager;
@@ -123,6 +124,10 @@ public class MarkLogicConnections {
 
     public TextDocumentManager getTextDocumentManager(String username) {
         return getDatabaseClient(username).newTextDocumentManager();
+    }
+
+    public BinaryDocumentManager getBinaryDocumentManager(String username) {
+        return getDatabaseClient(username).newBinaryDocumentManager();
     }
 
 }
