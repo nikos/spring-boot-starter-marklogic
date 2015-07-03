@@ -3,12 +3,10 @@
   <groupId>de.nava</groupId>
   <artifactId>spring-boot-starter-marklogic</artifactId>
   <versioning>
-    <release>0.1.2</release>
+    <release>0.1.3</release>
     <versions>
-      <version>0.1.2-SNAPSHOT</version>
-      <version>0.1.1</version>
-      <version>0.1.2</version>
+      <version>0.1.3</version>
     </versions>
-    <lastUpdated>20150619094144</lastUpdated>
+    <lastUpdated>20150703140438</lastUpdated>
   </versioning>
 </metadata>
