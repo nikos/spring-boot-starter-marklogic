@@ -12,7 +12,7 @@
 
     <groupId>de.nava</groupId>
     <artifactId>spring-boot-starter-marklogic</artifactId>
-    <version>0.1.3-SNAPSHOT</version>
+    <version>0.1.4-SNAPSHOT</version>
     <name>spring-boot-starter-marklogic</name>
     <description>Boot starter for web applications leveraging MarkLogic server</description>
     <packaging>jar</packaging>
@@ -36,7 +36,7 @@
         <connection>scm:git:git://github.com/nikos/spring-boot-starter-marklogic.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/nikos/spring-boot-starter-marklogic.git</developerConnection>
         <url>https://github.com/nikos/spring-boot-starter-marklogic</url>
-        <tag>0.1.3</tag>
+        <tag>0.1.4</tag>
     </scm>
 
     <properties>
