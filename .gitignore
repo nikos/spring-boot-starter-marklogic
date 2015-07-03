@@ -1,4 +1,6 @@
-*~
+# Maven release artefacts
+pom.xml.releaseBackup
+release.properties
 
 # Local Configuration might differ for your custom settings
 src/*/resources/application-local.yml

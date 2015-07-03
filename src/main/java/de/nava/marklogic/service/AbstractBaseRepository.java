@@ -136,6 +136,36 @@ public abstract class AbstractBaseRepository<T> {
         return objects;
     }
 
+    public Collection<JsonNode> getResultObjectsAsJSON(String username, SearchHandle searchResult) {
+        Collection<JsonNode> objects = new ArrayList<>();
+        for (MatchDocumentSummary summary : searchResult.getMatchResults()) {
+            String uri = summary.getUri();
+            try {
+                logger.debug("  * {}: {}", uri, summary.getFormat());
+                JsonNode doc = getDocumentAsJSON(username, uri);
+                objects.add(doc);
+            } catch (Exception e) {
+                logger.warn("Unable to retrieve JSON from {}: {}", uri, e.getMessage());
+            }
+        }
+        return objects;
+    }
+
+    public Collection<Document> getResultObjectsAsXML(String username, SearchHandle searchResult) {
+        Collection<Document> objects = new ArrayList<>();
+        for (MatchDocumentSummary summary : searchResult.getMatchResults()) {
+            String uri = summary.getUri();
+            try {
+                logger.debug("  * {}: {}", uri, summary.getFormat());
+                Document doc = getDocumentAsXML(username, uri);
+                objects.add(doc);
+            } catch (Exception e) {
+                logger.warn("Unable to retrieve XML from {}: {}", uri, e.getMessage());
+            }
+        }
+        return objects;
+    }
+
     /**
      * Maps an XML DOM to a domain specific object.
      */
